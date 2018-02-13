@@ -1,0 +1,12 @@
+{
+    "name": "Facebook",
+    "provider": "Botble\\Facebook\\Providers\\FacebookServiceProvider",
+    "plugin": "Botble\\Facebook\\Plugin",
+    "author": "Sang Nguyen",
+    "url": "http://sangnguyen.info",
+    "version": "1.0",
+    "description": "Facebook",
+    "dependencies": {
+        "sammyk/laravel-facebook-sdk": "^3.5"
+    }
+}

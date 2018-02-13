@@ -1,0 +1,1 @@
+{!! render_editor($name, $value, false, $attributes) !!}

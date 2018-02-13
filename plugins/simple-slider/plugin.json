@@ -1,0 +1,9 @@
+{
+    "name": "Simple Slider",
+    "provider": "Botble\\SimpleSlider\\Providers\\SimpleSliderServiceProvider",
+    "plugin": "Botble\\SimpleSlider\\Plugin",
+    "author": "Sang Nguyen",
+    "url": "http://sangnguyen.info",
+    "version": "1.0",
+    "description": "A plugin to create slider"
+}

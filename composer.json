@@ -1,0 +1,126 @@
+{
+    "name": "botble/platform",
+    "description": "The Botble Platform based on Laravel Framework.",
+    "keywords": [
+        "botble",
+        "botble cms",
+        "botble platform"
+    ],
+    "homepage": "https://botble.com",
+    "support": {
+        "issues": "https://github.com/botble/issues",
+        "document": "http://docs.botble.com"
+    },
+    "authors": [
+        {
+            "name": "Sang Nguyen",
+            "email": "sangnguyenplus@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "davejamesmiller/laravel-breadcrumbs": "~4.0",
+        "doctrine/annotations": "1.4.0",
+        "doctrine/cache": "1.6.2",
+        "doctrine/collections": "1.4.0",
+        "doctrine/common": "2.7.3",
+        "doctrine/dbal": "2.5.13",
+        "doctrine/inflector": "1.2.0",
+        "doctrine/instantiator": "1.0.5",
+        "fideloper/proxy": "~3.3",
+        "google/apiclient": "^2.0",
+        "google/recaptcha": "^1.1",
+        "intervention/image": "~2.3",
+        "laravel/framework": "5.5.*",
+        "laravel/socialite": "^3.0",
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "5.5.*",
+        "madewithlove/illuminate-psr-cache-bridge": "^1.0",
+        "pragmarx/countries": "~0.1",
+        "proengsoft/laravel-jsvalidation": "^2.1",
+        "roumen/sitemap": "~2.6",
+        "venturecraft/revisionable": "~1.27",
+        "yajra/laravel-datatables-buttons": "~3.0",
+        "yajra/laravel-datatables-oracle": "~8.0",
+        "sammyk/laravel-facebook-sdk": "^3.5",
+        "symfony/event-dispatcher": "3.4.1",
+        "league/flysystem-aws-s3-v3": "~1.0",
+        "ralouphie/mimey": "~1.0",
+        "tijsverkoyen/css-to-inline-styles": "2.2.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "2.*",
+        "filp/whoops": "~2.0",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/php-token-stream": "1.4.11",
+        "phpunit/phpunit": "~6.0",
+        "sebastian/global-state": "1.1.1"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Botble\\Support\\": "core/support/src",
+            "Botble\\ACL\\": "core/acl/src",
+            "Botble\\Assets\\": "core/assets/src",
+            "Botble\\Base\\": "core/base/src",
+            "Botble\\Dashboard\\": "core/dashboard/src",
+            "Botble\\Media\\": "core/media/src",
+            "Botble\\Menu\\": "core/menu/src",
+            "Botble\\Note\\": "plugins/note/src",
+            "Botble\\Page\\": "core/page/src",
+            "Botble\\SeoHelper\\": "core/seo-helper/src",
+            "Botble\\Widget\\": "core/widget/src",
+            "Botble\\Setting\\": "core/setting/src",
+            "Botble\\Theme\\": "core/theme/src",
+            "Botble\\Shortcode\\": "core/shortcode/src",
+            "Botble\\Optimize\\": "core/optimize/src",
+            "Botble\\Blog\\": "plugins/blog/src",
+            "Botble\\RequestLog\\": "plugins/request-log/src",
+            "Botble\\Analytics\\": "plugins/analytics/src",
+            "Botble\\Gallery\\": "plugins/gallery/src",
+            "Botble\\Language\\": "plugins/language/src",
+            "Botble\\Translation\\": "plugins/translation/src",
+            "Botble\\AuditLog\\": "plugins/audit-log/src",
+            "Botble\\LogViewer\\": "plugins/log-viewer/src",
+            "Botble\\Backup\\": "plugins/backup/src",
+            "Botble\\Slug\\": "core/slug/src",
+            "Botble\\Facebook\\": "plugins/facebook/src",
+            "Botble\\SimpleSlider\\": "plugins/simple-slider/src",
+            "Botble\\Captcha\\": "plugins/captcha/src",
+            "Botble\\Contact\\": "plugins/contact/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

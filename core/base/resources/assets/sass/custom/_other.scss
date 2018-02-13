@@ -1,0 +1,74 @@
+.list-item-checkbox {
+    overflow   : hidden !important;
+    max-height : 320px;
+    .mCSB_container {
+        padding-bottom : 20px;
+        .help-block.error-help-block {
+            position : absolute;
+            bottom   : 0;
+        }
+    }
+}
+
+.form-group-no-margin {
+    margin-bottom : 0;
+}
+
+.main-form-body .panel-default {
+    margin-top : 0 !important;
+}
+
+#plugin-list .plugin-item {
+    border        : 1px solid #cecece;
+    padding       : 10px;
+    border-radius : 5px !important;
+    margin        : 10px 0;
+    background    : #ffffff;
+}
+
+#plugin-list i {
+    font-size : 5em;
+    position  : absolute;
+    right     : 10%;
+    top       : 30%;
+    color     : #cecece;
+}
+
+#plugin-list p {
+    margin : 5px 0;
+}
+
+#plugin-list h3 {
+    font-weight : bold;
+}
+
+#plugin-list .plugin-description {
+    font-style : italic;
+}
+
+.preview-image-wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 50px;
+    min-height: 50px;
+    background : #cccccc;
+    img {
+        max-height: 150px;
+    }
+}
+.btn_remove_image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ddd;
+    color: #000;
+    display: inline-block;
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    &:hover {
+        background : #eeeeee;
+    }
+}
