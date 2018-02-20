@@ -2,8 +2,8 @@
     "name": "Backup",
     "provider": "Botble\\Backup\\Providers\\BackupServiceProvider",
     "plugin": "Botble\\Backup\\Plugin",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "Dang Quoc Dung",
+    "url": "http://dangquocdung.com",
     "version": "1.0",
     "description": "Backup"
 }

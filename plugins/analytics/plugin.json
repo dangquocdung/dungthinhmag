@@ -3,7 +3,7 @@
     "provider": "Botble\\Analytics\\Providers\\AnalyticsServiceProvider",
     "plugin": "Botble\\Analytics\\Plugin",
     "author": "Dang Quoc Dung",
-    "url": "http://sangnguyen.info",
+    "url": "http://dangquocdung.com",
     "version": "1.0",
     "description": "Analytics"
 }

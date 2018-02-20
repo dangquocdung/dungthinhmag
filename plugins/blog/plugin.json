@@ -2,8 +2,8 @@
     "name": "Blog",
     "provider": "Botble\\Blog\\Providers\\BlogServiceProvider",
     "plugin": "Botble\\Blog\\Plugin",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "Dang Quoc Dung",
+    "url": "http://dangquocdung.com",
     "version": "1.0",
     "description": "Blog news"
 }
