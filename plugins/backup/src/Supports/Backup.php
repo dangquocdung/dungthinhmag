@@ -98,7 +98,7 @@ class Backup
 
 //        $sql = 'mysqldump --user=' . env('DB_USERNAME') . ' --password=' . env('DB_PASSWORD') . ' --host=' . env('DB_HOST') . ' ' . env('DB_DATABASE') . ' > ' . $path . '.sql';
 
-        $sql = 'mysqldump -u ' . env('DB_USERNAME') . ' -p' . env('DB_PASSWORD') . ' ' .  env('DB_DATABASE') . ' > ' . $path . '.sql';
+        $sql = 'mysqldump -u dungthinhmag -ppassword dungthinhmag > ' . $path . '.sql';
 
         system($sql);
         $this->compressFileToZip($path, $file);
