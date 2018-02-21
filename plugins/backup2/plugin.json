@@ -1,5 +1,5 @@
 {
-    "name": "Backup",
+    "name": "Backup 2",
     "provider": "Botble\\Backup\\Providers\\BackupServiceProvider",
     "plugin": "Botble\\Backup\\Plugin",
     "author": "Dang Quoc Dung",
