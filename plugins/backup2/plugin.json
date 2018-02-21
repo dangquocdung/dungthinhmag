@@ -1,0 +1,9 @@
+{
+    "name": "Backup",
+    "provider": "Botble\\Backup\\Providers\\BackupServiceProvider",
+    "plugin": "Botble\\Backup\\Plugin",
+    "author": "Dang Quoc Dung",
+    "url": "http://dangquocdung.com",
+    "version": "1.0",
+    "description": "Backup"
+}
